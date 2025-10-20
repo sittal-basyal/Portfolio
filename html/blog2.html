@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathon Diaries: Lessons from Kathmandu University Fest - Sittal Basyal</title>
+    <meta name="description" content="Read about Sittal Basyal's experience at Kathmandu University Hackathon">
+    <meta name="keywords" content="hackathon, programming, Kathmandu University, Sittal Basyal">
+    <meta name="author" content="Sittal Basyal">
+    <link rel="icon" href="../img/favicon.ico">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/blog1.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <nav>
+                <a href="../index.html" class="logo">Sittal<span>.</span></a>
+                <ul class="nav-links">
+                    <li><a href="../index.html#home">Home</a></li>
+                    <li><a href="../index.html#about">About</a></li>
+                    <li><a href="../index.html#skills">Skills</a></li>
+                    <li><a href="../index.html#projects">Projects</a></li>
+                    <li><a href="../index.html#blog">Blog</a></li>
+                    <li><a href="../index.html#contact">Contact</a></li>
+                </ul>
+                <button class="mobile-menu-btn" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Blog Post Hero -->
+    <section class="blog-post-hero">
+        <div class="container">
+            <h1 class="fade-in">Hackathon Diaries: Lessons from Kathmandu University Fest</h1>
+            <div class="blog-post-meta fade-in delay-1">
+                <div class="meta-item">
+                    <i class="fas fa-user"></i>
+                    <span>Sittal Basyal</span>
+                </div>
+                <div class="meta-item">
+                    <i class="fas fa-calendar"></i>
+                    <span>April 22, 2023</span>
+                </div>
+                <div class="meta-item">
+                    <i class="fas fa-clock"></i>
+                    <span>6 min read</span>
+                </div>
+                <div class="meta-item">
+                    <i class="fas fa-tags"></i>
+                    <span>Hackathon, Programming, Teamwork</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Post Content -->
+    <div class="container">
+        <article class="blog-post-content">
+            <div class="blog-post-image fade-in">
+                <img src="https://images.unsplash.com/photo-1535223289827-42f1e9919769?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="Hackathon Experience">
+            </div>
+
+            <div class="blog-post-body">
+                <p class="fade-in">Participating in the Kathmandu University hackathon was one of the most exhilarating experiences of my life. From brainstorming ideas to coding for hours with my team, the event was a perfect blend of challenge and creativity.</p>
+
+                <h2 class="fade-in">The Preparation Phase</h2>
+                <p class="fade-in">Our journey began two weeks before the actual event. My team and I spent countless hours researching potential project ideas, brushing up on our technical skills, and preparing for the intense coding sessions ahead. We knew we wanted to build something that could make a real impact.</p>
+
+                <div class="blog-post-image fade-in">
+                    <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1064&q=80" alt="Team Collaboration">
+                </div>
+
+                <h2 class="fade-in">The 48-Hour Marathon</h2>
+                
+                <h3 class="fade-in">Day 1: Ideation and Planning</h3>
+                <p class="fade-in">The hackathon kicked off with an opening ceremony where we received the problem statements. Our team decided to work on developing an AI-powered platform for mental health support. The first 12 hours were dedicated to planning, wireframing, and dividing tasks among team members.</p>
+
+                <h3 class="fade-in">Day 2: Development Sprint</h3>
+                <p class="fade-in">This was where the real magic happened. We worked through the night, fueled by coffee and determination. I was responsible for the frontend development while my teammates handled the backend and AI integration.</p>
+
+                <div class="code-block fade-in">
+                    <pre><code>// Sample of our React component structure
+import React, { useState } from 'react';
+import ChatInterface from './components/ChatInterface';
+import EmotionAnalysis from './components/EmotionAnalysis';
+
+function MentalHealthApp() {
+    const [userInput, setUserInput] = useState('');
+    const [conversation, setConversation] = useState([]);
+    
+    const handleSendMessage = async (message) => {
+        // AI integration for mental health support
+        const response = await analyzeEmotion(message);
+        setConversation([...conversation, 
+            { type: 'user', content: message },
+            { type: 'ai', content: response }
+        ]);
+    };
+    
+    return (
+        <div className="app">
+            <ChatInterface onSendMessage={handleSendMessage} />
+            <EmotionAnalysis conversation={conversation} />
+        </div>
+    );
+}</code></pre>
+                </div>
+
+                <h3 class="fade-in">The Final Push</h3>
+                <p class="fade-in">The last 6 hours were the most intense. We were debugging, testing, and polishing our presentation. Despite the sleep deprivation, the energy in the room was incredible as all teams raced against the clock.</p>
+
+                <blockquote class="fade-in">
+                    "Hackathons aren't just about writing code; they're about solving problems under pressure and learning to work as a cohesive unit."
+                </blockquote>
+
+                <h2 class="fade-in">Key Lessons Learned</h2>
+                <p class="fade-in">This experience taught me invaluable lessons that go beyond technical skills:</p>
+
+                <h3 class="fade-in">1. Teamwork is Everything</h3>
+                <p class="fade-in">Clear communication and trust among team members were crucial. We learned to leverage each other's strengths and support each other's weaknesses.</p>
+
+                <h3 class="fade-in">2. Time Management</h3>
+                <p class="fade-in">Breaking down the project into manageable chunks and setting realistic milestones kept us on track throughout the event.</p>
+
+                <h3 class="fade-in">3. Embracing Imperfection</h3>
+                <p class="fade-in">We learned that in hackathons, done is better than perfect. Having a working prototype with core functionality is more valuable than a perfect but incomplete project.</p>
+
+                <h2 class="fade-in">The Result and Recognition</h2>
+                <p class="fade-in">Our mental health support platform impressed the judges with its innovative approach and clean implementation. While we didn't win the top prize, we received special recognition for our user-centric design and received valuable feedback from industry experts.</p>
+
+                <p class="fade-in">The most rewarding part was seeing our idea come to life and knowing it could potentially help people struggling with mental health issues.</p>
+
+                <div class="blog-tags fade-in">
+                    <span class="blog-tag">Hackathon</span>
+                    <span class="blog-tag">Programming</span>
+                    <span class="blog-tag">Teamwork</span>
+                    <span class="blog-tag">Web Development</span>
+                    <span class="blog-tag">AI Integration</span>
+                </div>
+            </div>
+
+            <!-- Blog Navigation -->
+            <div class="blog-navigation fade-in">
+                <a href="blog1.html" class="nav-btn prev">
+                    <i class="fas fa-arrow-left"></i>
+                    Previous Post
+                </a>
+                <a href="../index.html#blog" class="nav-btn">
+                    Back to Blog
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <!-- Author Bio -->
+            <div class="author-bio fade-in">
+                <div class="author-info">
+                    <div class="author-avatar">
+                        <img src="../img/profile.jpg" alt="Sittal Basyal">
+                    </div>
+                    <div class="author-details">
+                        <h4>Sittal Basyal</h4>
+                        <p>Data Science Enthusiast & Web Developer passionate about creating intelligent solutions and sharing knowledge through writing.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Related Posts -->
+            <div class="related-posts fade-in">
+                <h3>You Might Also Like</h3>
+                <div class="blog-grid">
+                    <div class="blog-card fade-in">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Data Science Journey">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-date">May 15, 2023</div>
+                            <h3>Journey to Becoming a Data Scientist</h3>
+                            <p class="blog-excerpt">When I first discovered the world of data science and AI/ML, I was instantly hooked. The idea of turning raw data into meaningful insights felt like magic...</p>
+                            <a href="blog1.html" class="blog-link">
+                                Read More <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="blog-card fade-in delay-1">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1172&q=80" alt="The Power of Routine">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-date">March 10, 2023</div>
+                            <h3>The Power of Routine: My Productivity Hacks</h3>
+                            <p class="blog-excerpt">A solid routine has been the backbone of my productivity. Balancing learning, coding, and personal growth...</p>
+                            <a href="blog3.html" class="blog-link">
+                                Read More <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <a href="../index.html" class="footer-logo">Sittal<span>.</span></a>
+                <ul class="footer-links">
+                    <li><a href="../index.html#home">Home</a></li>
+                    <li><a href="../index.html#about">About</a></li>
+                    <li><a href="../index.html#skills">Skills</a></li>
+                    <li><a href="../index.html#projects">Projects</a></li>
+                    <li><a href="../index.html#blog">Blog</a></li>
+                    <li><a href="../index.html#contact">Contact</a></li>
+                </ul>
+                <div class="social-links">
+                    <a href="https://github.com/sittal-basyal" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/sittal-basyal-5a162a32b/" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://www.facebook.com/shittal.bashyal" target="_blank" class="social-link">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Sittal Basyal. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+    <script src="../js/animations.js"></script>
+</body>
+
+</html>
