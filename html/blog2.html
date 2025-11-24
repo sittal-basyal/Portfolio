@@ -18,7 +18,6 @@
 
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/responsive.css">
-    <link rel="stylesheet" href="../css/blog1.css">
 </head>
 
 <body>
@@ -45,7 +44,7 @@
     <!-- Blog Post Hero -->
     <section class="blog-post-hero">
         <div class="container">
-            <h1 class="fade-in">Hackathon Diaries: Lessons from Kathmandu University Fest</h1>
+            <h1 class="fade-in">Hackathon Diaries: Lessons from CodeFest</h1>
             <div class="blog-post-meta fade-in delay-1">
                 <div class="meta-item">
                     <i class="fas fa-user"></i>
@@ -53,7 +52,7 @@
                 </div>
                 <div class="meta-item">
                     <i class="fas fa-calendar"></i>
-                    <span>April 22, 2023</span>
+                    <span>November 23, 2025</span>
                 </div>
                 <div class="meta-item">
                     <i class="fas fa-clock"></i>
@@ -71,53 +70,95 @@
     <div class="container">
         <article class="blog-post-content">
             <div class="blog-post-image fade-in">
-                <img src="https://images.unsplash.com/photo-1535223289827-42f1e9919769?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="Hackathon Experience">
+                <img src="../images/blog2_b.jfif" alt="Hackathon Experience">
             </div>
 
             <div class="blog-post-body">
-                <p class="fade-in">Participating in the Kathmandu University hackathon was one of the most exhilarating experiences of my life. From brainstorming ideas to coding for hours with my team, the event was a perfect blend of challenge and creativity.</p>
+                <p class="fade-in">Participating in the Code for Change hackathon was one of the most exhilarating experiences of my life. From brainstorming ideas to coding for hours with my team, the event was a perfect blend of challenge and creativity.</p>
 
                 <h2 class="fade-in">The Preparation Phase</h2>
-                <p class="fade-in">Our journey began two weeks before the actual event. My team and I spent countless hours researching potential project ideas, brushing up on our technical skills, and preparing for the intense coding sessions ahead. We knew we wanted to build something that could make a real impact.</p>
+                <p class="fade-in">Our journey began three days before the actual event. My team and I spent hours researching potential project ideas, brushing up on our technical skills, and preparing for the intense coding sessions ahead. We knew we wanted to build something that could make a real impact.</p>
 
                 <div class="blog-post-image fade-in">
-                    <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1064&q=80" alt="Team Collaboration">
+                    <img src="https://scontent.fktm1-1.fna.fbcdn.net/v/t39.30808-6/586721060_122166114920381090_2739282861954412588_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Jy6R1xj3VQsQ7kNvwGSr0YJ&_nc_oc=AdkJXZuIfp_Rnsb-0rF3FkEbvFtdYZtsVzxHhh4YSAevkIgIDaeWUqMlXvbsVK4OFUA&_nc_zt=23&_nc_ht=scontent.fktm1-1.fna&_nc_gid=eUHlf0P4EDnM-xmTY3qHDA&oh=00_Afi3syuRdQPc0JZ1vZYMor50iYb2TgjKJKZ-Co8zXi-BHA&oe=692A3C89" alt="Team Collaboration">
                 </div>
 
-                <h2 class="fade-in">The 48-Hour Marathon</h2>
+                <h2 class="fade-in">The 24-Hour Marathon</h2>
                 
-                <h3 class="fade-in">Day 1: Ideation and Planning</h3>
-                <p class="fade-in">The hackathon kicked off with an opening ceremony where we received the problem statements. Our team decided to work on developing an AI-powered platform for mental health support. The first 12 hours were dedicated to planning, wireframing, and dividing tasks among team members.</p>
+                <h3 class="fade-in">Day 1: Ideation,Planning and Development Sprint</h3>
+                <p class="fade-in">The hackathon kicked off with an opening ceremony where we received the problem statements. Our team decided to work on developing an platform for reusing the used books. The first 5 hours were dedicated to planning, wireframing, and dividing tasks among team members.</p>
 
-                <h3 class="fade-in">Day 2: Development Sprint</h3>
-                <p class="fade-in">This was where the real magic happened. We worked through the night, fueled by coffee and determination. I was responsible for the frontend development while my teammates handled the backend and AI integration.</p>
+                <p class="fade-in">. We worked through the night, fueled by coffee and determination. I was responsible for the frontend development while my teammates handled the backend and AI integration.</p>
 
                 <div class="code-block fade-in">
-                    <pre><code>// Sample of our React component structure
-import React, { useState } from 'react';
-import ChatInterface from './components/ChatInterface';
-import EmotionAnalysis from './components/EmotionAnalysis';
+                    <pre><code>// Sample of our  component structure
+async function getCoordinates(city) {
+    try {
+        // Fallback coordinates for major cities
+        const fallbackCoords = {
+            'new york': { lat: 40.7128, lng: -74.0060 },
+            'los angeles': { lat: 34.0522, lng: -118.2437 },
+            'chicago': { lat: 41.8781, lng: -87.6298 },
+            'london': { lat: 51.5074, lng: -0.1278 },
+            'toronto': { lat: 43.6532, lng: -79.3832 }
+            // Add more cities as needed
+        };
 
-function MentalHealthApp() {
-    const [userInput, setUserInput] = useState('');
-    const [conversation, setConversation] = useState([]);
-    
-    const handleSendMessage = async (message) => {
-        // AI integration for mental health support
-        const response = await analyzeEmotion(message);
-        setConversation([...conversation, 
-            { type: 'user', content: message },
-            { type: 'ai', content: response }
-        ]);
-    };
-    
-    return (
-        <div className="app">
-            <ChatInterface onSendMessage={handleSendMessage} />
-            <EmotionAnalysis conversation={conversation} />
-        </div>
-    );
-}</code></pre>
+        const normalizedCity = city.toLowerCase().trim();
+        if (fallbackCoords[normalizedCity]) {
+            return fallbackCoords[normalizedCity];
+        }
+
+        // If you have OpenCage API key, use this:
+        if (OPENCAGE_API_KEY && OPENCAGE_API_KEY !== 'your-opencage-api-key') {
+            const response = await fetch(
+                `https://api.opencagedata.com/geocode/v1/json?q=${encodeURIComponent(city)}&key=${OPENCAGE_API_KEY}`
+            );
+            const data = await response.json();
+            
+            if (data.results && data.results.length > 0) {
+                const { lat, lng } = data.results[0].geometry;
+                return { lat, lng };
+            }
+        }
+
+        // Fallback: return coordinates for a central location
+        return { lat: 40.7128, lng: -74.0060 }; // New York
+    } catch (error) {
+        console.error('Geocoding error:', error);
+        return { lat: 40.7128, lng: -74.0060 }; // Fallback to New York
+    }
+}
+
+function calculateDistance(lat1, lon1, lat2, lon2) {
+    const R = 6371; // Earth's radius in km
+    const dLat = (lat2 - lat1) * Math.PI / 180;
+    const dLon = (lon2 - lon1) * Math.PI / 180;
+    const a = 
+        Math.sin(dLat/2) * Math.sin(dLat/2) +
+        Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) * 
+        Math.sin(dLon/2) * Math.sin(dLon/2);
+    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+    return R * c;
+}
+
+// Get user's current location (optional)
+function getUserLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(
+            (position) => {
+                userLocation = {
+                    lat: position.coords.latitude,
+                    lng: position.coords.longitude
+                };
+            },
+            (error) => {
+                console.log('Location access denied or unavailable');
+            }
+        );
+    }
+}
+</code></pre>
                 </div>
 
                 <h3 class="fade-in">The Final Push</h3>
@@ -140,7 +181,7 @@ function MentalHealthApp() {
                 <p class="fade-in">We learned that in hackathons, done is better than perfect. Having a working prototype with core functionality is more valuable than a perfect but incomplete project.</p>
 
                 <h2 class="fade-in">The Result and Recognition</h2>
-                <p class="fade-in">Our mental health support platform impressed the judges with its innovative approach and clean implementation. While we didn't win the top prize, we received special recognition for our user-centric design and received valuable feedback from industry experts.</p>
+                <p class="fade-in">Our BookThrift platform impressed the judges with its innovative approach and clean implementation. While we didn't win the top prize, we received special recognition for our user-centric design and received valuable feedback from industry experts.</p>
 
                 <p class="fade-in">The most rewarding part was seeing our idea come to life and knowing it could potentially help people struggling with mental health issues.</p>
 
@@ -149,7 +190,6 @@ function MentalHealthApp() {
                     <span class="blog-tag">Programming</span>
                     <span class="blog-tag">Teamwork</span>
                     <span class="blog-tag">Web Development</span>
-                    <span class="blog-tag">AI Integration</span>
                 </div>
             </div>
 
@@ -169,7 +209,7 @@ function MentalHealthApp() {
             <div class="author-bio fade-in">
                 <div class="author-info">
                     <div class="author-avatar">
-                        <img src="../img/profile.jpg" alt="Sittal Basyal">
+                        <img src="../images/profile.jpg" alt="Sittal Basyal">
                     </div>
                     <div class="author-details">
                         <h4>Sittal Basyal</h4>
@@ -246,8 +286,13 @@ function MentalHealthApp() {
     </footer>
 
     <!-- Back to top button -->
-    <button class="back-to-top">
+    <button class="back-to-top" aria-label="Back to top">
         <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Theme toggle button -->
+    <button class="theme-toggle" aria-label="Toggle theme">
+        <i class="fas fa-moon"></i>
     </button>
 
     <!-- JavaScript -->

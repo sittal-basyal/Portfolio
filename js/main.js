@@ -207,43 +207,22 @@ function initProjectFilter() {
       button.classList.add("active");
       button.setAttribute("aria-pressed", "true");
 
-      // Add loading state to grid
-      if (projectGrid) {
-        projectGrid.style.opacity = "0.7";
-        projectGrid.style.pointerEvents = "none";
-      }
-
-      // Filter projects with animation
-      let visibleCount = 0;
-      projectCards.forEach((card, index) => {
+      // Instant filtering without animations
+      projectCards.forEach((card) => {
         const matchesFilter =
           filterValue === "all" ||
           card.getAttribute("data-category") === filterValue;
 
         if (matchesFilter) {
-          visibleCount++;
           card.style.display = "block";
-          // Stagger animation
-          setTimeout(() => {
-            card.style.opacity = "1";
-            card.style.transform = "translateY(0) scale(1)";
-          }, index * 50);
+          card.style.opacity = "1";
+          card.style.transform = "translateY(0) scale(1)";
         } else {
+          card.style.display = "none";
           card.style.opacity = "0";
           card.style.transform = "translateY(20px) scale(0.95)";
-          setTimeout(() => {
-            card.style.display = "none";
-          }, 300);
         }
       });
-
-      // Remove loading state
-      setTimeout(() => {
-        if (projectGrid) {
-          projectGrid.style.opacity = "1";
-          projectGrid.style.pointerEvents = "auto";
-        }
-      }, Math.max(300, projectCards.length * 50));
     });
   });
 }
@@ -424,28 +403,59 @@ function initializeSkillProgress() {
   skillProgressBars.forEach((bar) => {
     const level = bar.getAttribute("data-level");
     if (level) {
-      // Animate progress on scroll
+      // Animate progress on scroll with improved observer options
       const observer = new IntersectionObserver(
         (entries) => {
           entries.forEach((entry) => {
             if (entry.isIntersecting) {
+              // Add a small delay to ensure smooth animation
               setTimeout(() => {
                 bar.style.width = level + "%";
                 bar.setAttribute("aria-valuenow", level);
-              }, 200);
+              }, 300);
               observer.unobserve(bar);
             }
           });
         },
         {
-          threshold: 0.5,
-          rootMargin: "0px 0px -50px 0px",
+          threshold: 0.1, // Lower threshold for better triggering
+          rootMargin: "0px 0px -100px 0px", // More generous margin
         }
       );
 
       observer.observe(bar);
     }
   });
+
+  // Fallback: trigger animation if user scrolls to skills section
+  const skillsSection = document.getElementById("skills");
+  if (skillsSection) {
+    const sectionObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            // Force animation for any bars that haven't animated yet
+            skillProgressBars.forEach((bar) => {
+              const level = bar.getAttribute("data-level");
+              if (level && bar.style.width === "") {
+                setTimeout(() => {
+                  bar.style.width = level + "%";
+                  bar.setAttribute("aria-valuenow", level);
+                }, 300);
+              }
+            });
+            sectionObserver.unobserve(skillsSection);
+          }
+        });
+      },
+      {
+        threshold: 0.2,
+        rootMargin: "0px 0px -50px 0px",
+      }
+    );
+
+    sectionObserver.observe(skillsSection);
+  }
 }
 
 // Click outside to close mobile menu
@@ -478,6 +488,7 @@ function initClickOutside() {
   }
 }
 
+
 // Initialize all functionality when DOM is loaded
 document.addEventListener("DOMContentLoaded", function () {
   initMobileMenu();
@@ -486,7 +497,6 @@ document.addEventListener("DOMContentLoaded", function () {
   initProjectFilter();
   initBackToTop();
   initThemeToggle();
-  initHeroAnimation();
   initLoadingAnimation();
   initializeSkillProgress();
   initClickOutside();

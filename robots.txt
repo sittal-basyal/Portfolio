@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sittal-basyal.github.io/sitemap.xml
