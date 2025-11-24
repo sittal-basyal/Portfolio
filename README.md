@@ -119,9 +119,7 @@ Modify CSS variables in `css/style.css`:
 - CSS Grid and Flexbox for efficient layouts
 - Lazy loading animations
 
-## License
 
-This project is open source and available under the [MIT License](LICENSE).
 
 ## Contact
 
