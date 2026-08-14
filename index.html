@@ -1,610 +1,427 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sittal Basyal | Data Science & AI/ML Portfolio</title>
-    <meta name="description" content="Professional portfolio of Sittal Basyal - Data Science enthusiast, AI/ML developer, and full-stack web developer. Explore projects, skills, and insights in data science and web development.">
-    <meta name="keywords" content="Sittal Basyal, Data Science, AI, Machine Learning, Web Developer, Portfolio, Python, JavaScript, React, Data Analysis, Nepal">
-    <meta name="author" content="Sittal Basyal">
-    <meta name="robots" content="index, follow">
-    <meta name="language" content="English">
-    <meta name="revisit-after" content="7 days">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sittal Basyal — AI/ML Enthusiast & CS Student</title>
+  <meta name="description" content="Portfolio of Sittal Basyal — AI/ML enthusiast and Computer Science student. Exploring intelligent systems, data science and deep learning." />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Cdefs%3E%3ClinearGradient%20id='g'%20x1='0'%20y1='0'%20x2='1'%20y2='1'%3E%3Cstop%20offset='0'%20stop-color='%236ee7ff'/%3E%3Cstop%20offset='1'%20stop-color='%23a78bfa'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect%20width='64'%20height='64'%20rx='16'%20fill='url(%23g)'/%3E%3Ctext%20x='32'%20y='43'%20font-family='Arial'%20font-size='26'%20font-weight='bold'%20fill='%2307080d'%20text-anchor='middle'%3ESB%3C/text%3E%3C/svg%3E" />
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://sittal-basyal.github.io/">
-    <meta property="og:title" content="Sittal Basyal | Data Science & AI/ML Portfolio">
-    <meta property="og:description" content="Professional portfolio showcasing data science projects, AI/ML expertise, and web development skills.">
-    <meta property="og:image" content="./images/profile.jpg">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://sittal-basyal.github.io/">
-    <meta property="twitter:title" content="Sittal Basyal | Data Science & AI/ML Portfolio">
-    <meta property="twitter:description" content="Professional portfolio showcasing data science projects, AI/ML expertise, and web development skills.">
-    <meta property="twitter:image" content="./images/profile.jpg">
-
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://sittal-basyal.github.io/">
-
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%236366f1'/><text x='50' y='65' text-anchor='middle' fill='white' font-size='50' font-family='Arial, sans-serif' font-weight='bold'>SB</text></svg>">
-
-    <!-- Structured Data -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Sittal Basyal",
-      "jobTitle": "Data Science Enthusiast & Web Developer",
-      "description": "Passionate data science enthusiast and web developer specializing in AI/ML, Python, JavaScript, and modern web technologies.",
-      "image": "./images/profile.jpg",
-      "url": "https://sittal-basyal.github.io/",
-      "sameAs": [
-        "https://github.com/sittal-basyal",
-        "https://www.linkedin.com/in/sittal-basyal-5a162a32b/",
-        "https://www.facebook.com/shittal.bashyal"
-      ],
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Butwal",
-        "addressRegion": "Rupandehi",
-        "addressCountry": "Nepal"
-      },
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+977-9843905803",
-        "email": "bashyalshittal@gmail.com",
-        "contactType": "Personal"
-      },
-      "knowsAbout": [
-        "Data Science",
-        "Machine Learning",
-        "Artificial Intelligence",
-        "Python",
-        "JavaScript",
-        "Web Development",
-        "Data Analysis",
-        "SQL",
-        "React",
-        "Git"
-      ],
-      "hasOccupation": {
-        "@type": "Occupation",
-        "name": "Data Science Student & Web Developer",
-        "occupationLocation": {
-          "@type": "City",
-          "name": "Butwal",
-          "addressCountry": "Nepal"
-        }
-      }
-    }
-    </script>
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "Sittal Basyal Portfolio",
-      "url": "https://sittal-basyal.github.io/",
-      "description": "Professional portfolio showcasing data science projects, AI/ML expertise, and web development skills.",
-      "author": {
-        "@type": "Person",
-        "name": "Sittal Basyal"
-      },
-      "publisher": {
-        "@type": "Person",
-        "name": "Sittal Basyal"
-      },
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://sittal-basyal.github.io/?s={search_term_string}",
-        "query-input": "required name=search_term_string"
-      }
-    }
-    </script>
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/responsive.css">
-
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css" />
 </head>
-
 <body>
-    <!-- Skip to main content link for accessibility -->
-    <a href="#main-content" class="skip-link">Skip to main content</a>
 
-    <!-- Header -->
-    <header id="header">
-        <div class="container">
-            <nav>
-                <a href="#home" class="logo">Sittal<span>.</span></a>
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <button class="mobile-menu-btn" aria-label="Toggle menu">
-                    <i class="fas fa-bars"></i>
-                </button>
-            </nav>
+  <!-- Background decoration -->
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-orb orb-a" aria-hidden="true"></div>
+  <div class="bg-orb orb-b" aria-hidden="true"></div>
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-inner">
+      <span class="preloader-dot"></span>
+      <span class="preloader-dot"></span>
+      <span class="preloader-dot"></span>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="#home" class="logo">
+        <span class="logo-mark">SB</span>
+        <span class="logo-text">Sittal<span class="accent">.</span></span>
+      </a>
+      <nav class="nav-links" id="nav-links" aria-label="Primary">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#experience" class="nav-link">Hackathons</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero section" id="home">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <span class="badge reveal"><i class="dot"></i> Available for collaboration</span>
+          <h1 class="hero-title reveal">
+            Hi, I'm <span class="gradient-text">Sittal Basyal</span>
+          </h1>
+          <div class="hero-role reveal">
+            <span class="role-static">I build</span>
+            <span class="type-text" id="type-text"></span><span class="cursor">|</span>
+          </div>
+          <p class="hero-sub reveal">
+            AI/ML enthusiast &amp; Computer Science student at Tribhuvan University —
+            turning data into intelligence, curiosity into code.
+          </p>
+          <div class="hero-actions reveal">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+          </div>
+          <div class="hero-meta reveal">
+            <a href="mailto:bashyalshittal@gmail.com" class="icon-link" aria-label="Email">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+            </a>
+            <a href="tel:+9779843905803" class="icon-link" aria-label="Phone">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </a>
+            <a href="https://github.com/sittal-basyal" target="_blank" rel="noopener" class="icon-link" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.91c.58.11.79-.25.79-.55v-2.17c-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.72.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.75 2.69 1.25 3.34.95.1-.74.4-1.25.72-1.53-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .96-.31 3.15 1.18a10.9 10.9 0 0 1 5.74 0c2.19-1.49 3.15-1.18 3.15-1.18.62 1.59.23 2.76.11 3.05.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.38-5.25 5.67.41.35.78 1.05.78 2.12v3.14c0 .3.21.66.8.55A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/></svg>
+            </a>
+          </div>
         </div>
-    </header>
 
-    <!-- Main Content -->
-    <main id="main-content">
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content fade-in" id="hero-content">
-                <h1>Hi, I'm <span class=" highlight">Sittal Basyal</span></h1>
-                <div class="typed-text">
-                    <span id="typed"></span>
-                </div>
-                <p>Data Science & AI/ML Enthusiast passionate about creating intelligent solutions and beautiful web
-                    experiences.</p>
-                <div class="hero-btns">
-                    <a href="#projects" class="btn">View My Work</a>
-                    <a href="#contact" class="btn btn-outline">Contact Me</a>
-                </div>
+        <div class="hero-visual reveal">
+          <div class="photo-wrap">
+            <div class="photo-frame">
+              <img src="assets/images/annual.jpg" alt="Sittal Basyal" class="photo" />
+              <div class="photo-glow" aria-hidden="true"></div>
             </div>
-            <div class="hero-image fade-in delay-1" id="hero">
-                <img src="./images/profile.jpg"
-                    alt="Sittal Basyal - Data Science Enthusiast and Web Developer">
-            </div>
+            <span class="status-chip"><i class="dot"></i> Open to work</span>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title fade-in">About Me</h2>
-            <div class="about-content">
-                <div class="about-text fade-in">
-                    <h3>Hi! I'm a passionate and dedicated web developer in training</h3>
-                    <p>With a strong interest in building dynamic and user-friendly web applications. Currently, I'm
-                        honing my skills in HTML, CSS, and C++, while also diving into Data Structures and Algorithms
-                        (DSA) in C++ to strengthen my problem-solving abilities.</p>
-                    <p>I'm always open to collaborating on exciting projects and connecting with like-minded developers.
-                        Let's build something amazing together!</p>
-
-                    <div class="about-details">
-                        <div class="detail-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Butwal, Nepal</span>
-                        </div>
-                        <div class="detail-item">
-                            <i class="fas fa-envelope"></i>
-                            <span>bashyalshittal@gmail.com</span>
-                        </div>
-                        <div class="detail-item">
-                            <i class="fas fa-phone"></i>
-                            <span>+977 9843905803</span>
-                        </div>
-                        <div class="detail-item">
-                            <i class="fab fa-github"></i>
-                            <span>github.com/sittal-basyal</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-image fade-in delay-1">
-                    <img src="./images/img_8.jpg" alt="About Sittal">
-                </div>
-            </div>
+    <!-- ============ ABOUT ============ -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">01 · About</span>
+          <h2 class="section-title">Turning curiosity into <span class="gradient-text">intelligence</span></h2>
         </div>
+
+        <div class="about-grid">
+          <div class="about-copy reveal">
+            <p>
+              I'm a Computer Science student (BSc. CSIT, IOST — Tribhuvan University)
+              deeply fascinated by artificial intelligence and machine learning.
+              From building predictive models to exploring neural networks,
+              I love breaking complex problems into elegant, data-driven solutions.
+            </p>
+          </div>
+
+          <div class="about-card reveal">
+            <div class="about-card-row">
+              <span class="label">Name</span>
+              <span class="value">Sittal Basyal</span>
+            </div>
+            <div class="about-card-row">
+              <span class="label">Focus</span>
+              <span class="value">AI / ML · Data Science</span>
+            </div>
+            <div class="about-card-row">
+              <span class="label">Education</span>
+              <span class="value">BSc. CSIT · IOST, TU</span>
+            </div>
+            <div class="about-card-row">
+              <span class="label">Location</span>
+              <span class="value">Nepal</span>
+            </div>
+            <div class="about-card-row">
+              <span class="label">Email</span>
+              <span class="value"><a href="mailto:bashyalshittal@gmail.com">bashyalshittal@gmail.com</a></span>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills">
-        <div class="container">
-            <h2 class="section-title fade-in">My Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-card fade-in">
-                    <div class="skill-icon">
-                        <i class="fab fa-html5"></i>
-                    </div>
-                    <div class="skill-name">HTML5</div>
-                    <div class="skill-level">
-                        <div class="skill-progress" data-level="90"></div>
-                    </div>
-                </div>
-                <div class="skill-card fade-in delay-1">
-                    <div class="skill-icon">
-                        <i class="fab fa-css3-alt"></i>
-                    </div>
-                    <div class="skill-name">CSS3</div>
-                    <div class="skill-level">
-                        <div class="skill-progress" data-level="85"></div>
-                    </div>
-                </div>
-                <div class="skill-card fade-in delay-2">
-                    <div class="skill-icon">
-                        <i class="fab fa-js"></i>
-                    </div>
-                    <div class="skill-name">JavaScript</div>
-                    <div class="skill-level">
-                        <div class="skill-progress" data-level="80"></div>
-                    </div>
-                </div>
-                <div class="skill-card fade-in">
-                    <div class="skill-icon">
-                        <i class="fab fa-python"></i>
-                    </div>
-                    <div class="skill-name">Python</div>
-                    <div class="skill-level">
-                        <div class="skill-progress" data-level="75"></div>
-                    </div>
-                </div>
-                <div class="skill-card fade-in delay-1">
-                    <div class="skill-icon">
-                        <i class="fas fa-database"></i>
-                    </div>
-                    <div class="skill-name">SQL</div>
-                    <div class="skill-level">
-                        <div class="skill-progress" data-level="70"></div>
-                    </div>
-                </div>
-                <div class="skill-card fade-in delay-2">
-                    <div class="skill-icon">
-                        <i class="fab fa-git-alt"></i>
-                    </div>
-                    <div class="skill-name">Git</div>
-                    <div class="skill-level">
-                        <div class="skill-progress" data-level="85"></div>
-                    </div>
-                </div>
-                <div class="skill-card fade-in">
-                    <div class="skill-icon">
-                        <i class="fab fa-react"></i>
-                    </div>
-                    <div class="skill-name">React</div>
-                    <div class="skill-level">
-                        <div class="skill-progress" data-level="65"></div>
-                    </div>
-                </div>
-                <div class="skill-card fade-in delay-1">
-                    <div class="skill-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <div class="skill-name">Data Analysis</div>
-                    <div class="skill-level">
-                        <div class="skill-progress" data-level="70"></div>
-                    </div>
-                </div>
-            </div>
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section experience" id="experience">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">02 · Hackathons</span>
+          <h2 class="section-title">My hackathon <span class="gradient-text">journey</span></h2>
         </div>
+
+        <div class="exp-grid">
+          <article class="exp-card reveal">
+            <div class="exp-top">
+              <span class="exp-date">2026</span>
+              <span class="exp-tag">Organizer</span>
+            </div>
+            <h3>CodeFest 2026</h3>
+            <p class="exp-org">Provincial Phase, Rupandehi</p>
+            <p class="exp-desc">Organized the Provincial Phase Rupandehi CodeFest — a regional hackathon bringing teams together to build and innovate.</p>
+          </article>
+
+          <article class="exp-card reveal">
+            <div class="exp-top">
+              <span class="exp-date">2025</span>
+              <span class="exp-tag">Participant</span>
+            </div>
+            <h3>CodeFest 2025 — Provincial Phase</h3>
+            <p class="exp-org">Team Minimalist · Nepathya College</p>
+            <p class="exp-desc">Reached the Top 10 out of 23 teams as "Team Minimalist" representing Nepathya College — our very first hackathon.</p>
+          </article>
+
+          <article class="exp-card reveal">
+            <div class="exp-top">
+              <span class="exp-date">2nd Hackathon</span>
+              <span class="exp-tag">Participant</span>
+            </div>
+            <h3>Book Thrift</h3>
+            <p class="exp-org">Team Minimalist</p>
+            <p class="exp-desc">Second hackathon done — built Book Thrift with a fantastic team, "Team Minimalist". Had an incredible experience throughout.</p>
+          </article>
+        </div>
+      </div>
     </section>
 
-
-    <!-- Projects Section -->
-    <section id="projects">
-        <div class="container">
-            <h2 class="section-title fade-in">My Projects</h2>
-            <div class="project-filters">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="web">Web Development</button>
-                <button class="filter-btn" data-filter="data">Data Science</button>
-                <button class="filter-btn" data-filter="ai">AI/ML</button>
-            </div>
-            <div class="projects-grid">
-                <div class="project-card fade-in" data-category="web">
-                    <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80"
-                            alt="E-commerce Website">
-                    </div>
-                    <div class="project-content">
-                        <h3>E-commerce Platform</h3>
-                        <p>A fully responsive e-commerce website with product filtering, cart functionality, and secure
-                            checkout.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">PHP</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link">
-                                <i class="fas fa-external-link-alt"></i> Live Demo
-                            </a>
-                            <a href="#" class="project-link">
-                                <i class="fab fa-github"></i> Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card fade-in delay-1" data-category="data">
-                    <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
-                            alt="Data Visualization Dashboard">
-                    </div>
-                    <div class="project-content">
-                        <h3>Data Visualization Dashboard</h3>
-                        <p>An interactive dashboard for visualizing and analyzing complex datasets with multiple chart
-                            types.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Pandas</span>
-                            <span class="tech-tag">Plotly</span>
-                            <span class="tech-tag">Flask</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link">
-                                <i class="fas fa-external-link-alt"></i> Live Demo
-                            </a>
-                            <a href="#" class="project-link">
-                                <i class="fab fa-github"></i> Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card fade-in delay-2" data-category="web">
-                    <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
-                            alt="Portfolio Website">
-                    </div>
-                    <div class="project-content">
-                        <h3>Personal Portfolio</h3>
-                        <p>A modern, responsive portfolio website showcasing my skills, projects, and blog posts.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">Responsive Design</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link">
-                                <i class="fas fa-external-link-alt"></i> Live Demo
-                            </a>
-                            <a href="#" class="project-link">
-                                <i class="fab fa-github"></i> Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card fade-in" data-category="ai">
-                    <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1555255707-c07966088b7b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80"
-                            alt="Machine Learning Model">
-                    </div>
-                    <div class="project-content">
-                        <h3>Predictive ML Model</h3>
-                        <p>Machine learning model for predicting customer behavior with 95% accuracy using Random
-                            Forest.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Scikit-learn</span>
-                            <span class="tech-tag">Pandas</span>
-                            <span class="tech-tag">NumPy</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link">
-                                <i class="fas fa-external-link-alt"></i> Live Demo
-                            </a>
-                            <a href="#" class="project-link">
-                                <i class="fab fa-github"></i> Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- ============ INVOLVEMENT ============ -->
+    <section class="section involvement" id="involvement">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">03 · Involvement</span>
+          <h2 class="section-title">Organizations</h2>
         </div>
+
+        <div class="involvement-grid">
+          <a href="https://www.linkedin.com/in/sittal-basyal-5a162a32b/" target="_blank" rel="noopener" class="org-card reveal">
+            <div class="org-logo">
+              <img src="assets/icons/ieee.svg" alt="IEEE logo" width="56" height="56" />
+            </div>
+            <div class="org-info">
+              <h3>IEEE Nepathya College Student Branch</h3>
+              <span class="org-role">Member</span>
+              <p class="org-desc">Active member of the IEEE student community at Nepathya College.</p>
+            </div>
+            <span class="org-link" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
+            </span>
+          </a>
+
+          <a href="https://www.linkedin.com/in/sittal-basyal-5a162a32b/" target="_blank" rel="noopener" class="org-card reveal">
+            <div class="org-logo org-logo-cfc">
+              <span class="org-logo-text">CfC</span>
+            </div>
+            <div class="org-info">
+              <h3>Code for Change Rupandehi</h3>
+              <span class="org-role">Secretary · 2025–26</span>
+              <p class="org-desc">Leading and coordinating activities that empower students across Rupandehi with coding and tech initiatives.</p>
+            </div>
+            <span class="org-link" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
+            </span>
+          </a>
+
+          <a href="https://www.linkedin.com/in/sittal-basyal-5a162a32b/" target="_blank" rel="noopener" class="org-card reveal">
+            <div class="org-logo org-logo-cfc">
+              <span class="org-logo-text">CfC</span>
+            </div>
+            <div class="org-info">
+              <h3>Code for Change Rupandehi</h3>
+              <span class="org-role">General Member · 2024–25</span>
+              <p class="org-desc">Contributed to the community's mission of making coding education accessible to students in the region.</p>
+            </div>
+            <span class="org-link" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
+            </span>
+          </a>
+        </div>
+      </div>
     </section>
 
-
-    <!-- Blog Section -->
-    <section id="blog">
-        <div class="container">
-            <h2 class="section-title fade-in">My Blog</h2>
-            <div class="blog-grid">
-                <div class="blog-card fade-in">
-                    <div class="blog-image">
-                        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
-                            alt="Journey to Becoming a Data Scientist">
-                    </div>
-                    <div class="blog-content">
-                        <div class="blog-date">May 15, 2023</div>
-                        <h3>Journey to Becoming a Data Scientist</h3>
-                        <p class="blog-excerpt">When I first discovered the world of data science and AI/ML, I was
-                            instantly hooked. The idea of turning raw data into meaningful insights felt like magic...
-                        </p>
-                        <a href="./html/blog1.html" class="blog-link">
-                            Read More <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="blog-card fade-in delay-1">
-                    <div class="blog-image">
-                        <img src="https://images.unsplash.com/photo-1535223289827-42f1e9919769?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80"
-                            alt="Hackathon Diaries">
-                    </div>
-                    <div class="blog-content">
-                        <div class="blog-date">April 22, 2023</div>
-                        <h3>Hackathon Diaries: Lessons from Kathmandu University Fest</h3>
-                        <p class="blog-excerpt">Participating in the Kathmandu University hackathon was one of the most
-                            exhilarating experiences of my life. From brainstorming ideas to coding for hours with my
-                            team...</p>
-                        <a href="./html/blog2.html" class="blog-link">
-                            Read More <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="blog-card fade-in delay-2">
-                    <div class="blog-image">
-                        <img src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1172&q=80"
-                            alt="The Power of Routine">
-                    </div>
-                    <div class="blog-content">
-                        <div class="blog-date">March 10, 2023</div>
-                        <h3>The Power of Routine: My Productivity Hacks</h3>
-                        <p class="blog-excerpt">A solid routine has been the backbone of my productivity. Balancing
-                            learning, coding, and personal growth might sound daunting, but a structured schedule makes
-                            it all achievable...</p>
-                        <a href="./html/blog3.html" class="blog-link">
-                            Read More <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
+    <!-- ============ SKILLS ============ -->
+    <section class="section skills" id="skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">04 · Skills</span>
+          <h2 class="section-title">My <span class="gradient-text">toolkit</span></h2>
         </div>
+
+        <div class="skills-grid">
+          <div class="skill-card reveal">
+            <div class="skill-icon">🐍</div>
+            <h3>Python &amp; ML</h3>
+            <p>Scikit-learn, TensorFlow, PyTorch — building and tuning intelligent models.</p>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-icon">📊</div>
+            <h3>Data Science</h3>
+            <p>Pandas, NumPy, visualization &amp; analytics to turn raw data into insight.</p>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-icon">🧠</div>
+            <h3>Deep Learning</h3>
+            <p>Neural networks, CNNs and transformers — the frontier of intelligent systems.</p>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-icon">🛠️</div>
+            <h3>Tools &amp; Workflow</h3>
+            <p>Git, Jupyter, VS Code, Docker, Postman — building efficient and reproducible pipelines.</p>
+          </div>
+        </div>
+
+        <div class="chips reveal">
+          <span class="chip">Python</span>
+          <span class="chip">NumPy</span>
+          <span class="chip">Pandas</span>
+          <span class="chip">Scikit-learn</span>
+          <span class="chip">TensorFlow</span>
+          <span class="chip">PyTorch</span>
+          <span class="chip">FastAPI</span>
+          <span class="chip">Matplotlib</span>
+          <span class="chip">Git</span>
+          <span class="chip">Jupyter</span>
+          <span class="chip">VS Code</span>
+          <span class="chip">Docker</span>
+          <span class="chip">Postman</span>
+        </div>
+      </div>
     </section>
 
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <h2 class="section-title fade-in">Get In Touch</h2>
-            <div class="contact-content">
-                <div class="contact-info fade-in">
-                    <h3>Let's Connect</h3>
-                    <p>I'm always open to discussing new opportunities, creative ideas, or opportunities to be part of
-                        your vision.</p>
-
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div class="contact-text">
-                            <h4>Location</h4>
-                            <p>Manigram, Tilottama-5, Rupandehi, Nepal</p>
-                        </div>
-                    </div>
-
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="contact-text">
-                            <h4>Email</h4>
-                            <p>bashyalshittal@gmail.com</p>
-                        </div>
-                    </div>
-
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div class="contact-text">
-                            <h4>Phone</h4>
-                            <p>+977 9843905803</p>
-                        </div>
-                    </div>
-
-                    <div class="social-links">
-                        <a href="https://api.whatsapp.com/send/?phone=%2B9779843905803&text&type=phone_number&app_absent=0text=Are%20you%20available?"
-                            target="_blank" class="social-link">
-                            <i class="fab fa-whatsapp"></i>
-                        </a>
-                        <a href="mailto:bashyalshittal@gmail.com" class="social-link">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/sittal-basyal-5a162a32b/" target="_blank"
-                            class="social-link">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="https://github.com/sittal-basyal" target="_blank" class="social-link">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="contact-form fade-in delay-1">
-                    <form id="contactForm">
-                        <input type="hidden" name="access_key" value="de45b2eb-5989-44f2-9885-696cff8aec7c">
-                        <input type="hidden" name="subject" value="New Contact Form Submission from Portfolio">
-                        <input type="hidden" name="from_name" value="Sittal Basyal Portfolio">
-                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-
-                        <div class="form-group">
-                            <label for="name">Full Name *</label>
-                            <input type="text" id="name" name="name" class="form-control" placeholder="Your Name"
-                                required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email Address *</label>
-                            <input type="email" id="email" name="email" class="form-control"
-                                placeholder="your.email@example.com" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Phone Number (Optional)</label>
-                            <input type="tel" id="phone" name="phone" class="form-control"
-                                placeholder="Your Phone Number">
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message *</label>
-                            <textarea id="message" name="message" class="form-control"
-                                placeholder="Your message here..." rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn">Send Message</button>
-                    </form>
-                </div>
-            </div>
+    <!-- ============ PROJECTS ============ -->
+    <section class="section projects" id="projects">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">05 · Projects</span>
+          <h2 class="section-title">Selected <span class="gradient-text">work</span></h2>
         </div>
+
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-top">
+              <div class="project-title-row">
+                <h3>ML Project One</h3>
+                <a href="https://github.com/sittal-basyal" target="_blank" rel="noopener" class="project-link" aria-label="View on GitHub">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
+                </a>
+              </div>
+              <p>A machine learning project — predict outcomes from data using a trained model pipeline.</p>
+            </div>
+            <div class="project-tags">
+              <span>Python</span><span>Scikit-learn</span><span>Pandas</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-top">
+              <div class="project-title-row">
+                <h3>Data Science Dashboard</h3>
+                <a href="https://github.com/sittal-basyal" target="_blank" rel="noopener" class="project-link" aria-label="View on GitHub">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
+                </a>
+              </div>
+              <p>Interactive data exploration and visualization dashboard for a real-world dataset.</p>
+            </div>
+            <div class="project-tags">
+              <span>Python</span><span>NumPy</span><span>Matplotlib</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-top">
+              <div class="project-title-row">
+                <h3>Deep Learning Model</h3>
+                <a href="https://github.com/sittal-basyal" target="_blank" rel="noopener" class="project-link" aria-label="View on GitHub">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
+                </a>
+              </div>
+              <p>Neural network experiment exploring CNNs / transformers on a benchmark task.</p>
+            </div>
+            <div class="project-tags">
+              <span>TensorFlow</span><span>PyTorch</span><span>Keras</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-top">
+              <div class="project-title-row">
+                <h3>Automation / Tools Script</h3>
+                <a href="https://github.com/sittal-basyal" target="_blank" rel="noopener" class="project-link" aria-label="View on GitHub">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
+                </a>
+              </div>
+              <p>A handy script or tool that automates a repetitive data workflow end-to-end.</p>
+            </div>
+            <div class="project-tags">
+              <span>Python</span><span>Automation</span><span>CLI</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="projects-more reveal">
+          <a href="https://github.com/sittal-basyal" target="_blank" rel="noopener" class="btn btn-ghost">
+            View all on GitHub
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
+          </a>
+        </div>
+      </div>
     </section>
 
-    </main>
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="contact-inner reveal">
+          <span class="section-tag">06 · Contact</span>
+          <h2 class="section-title">Let's build something <span class="gradient-text">intelligent</span></h2>
+          <p class="contact-sub">
+            Have an idea, a research question, or a project in mind?
+            My inbox is always open.
+          </p>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <a href="#home" class="footer-logo">Sittal<span>.</span></a>
-                <ul class="footer-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <div class="social-links">
-                    <a href="https://github.com/sittal-basyal" target="_blank" class="social-link">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/sittal-basyal-5a162a32b/" target="_blank" class="social-link">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="https://www.facebook.com/shittal.bashyal" target="_blank" class="social-link">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="copyright">
-                <p>&copy; 2025 Sittal Basyal. All rights reserved.</p>
-            </div>
+          <div class="contact-actions">
+            <a href="mailto:bashyalshittal@gmail.com" class="contact-card">
+              <span class="contact-icon">✉️</span>
+              <span class="contact-label">Email</span>
+              <span class="contact-value">bashyalshittal@gmail.com</span>
+            </a>
+            <a href="tel:+9779843905803" class="contact-card">
+              <span class="contact-icon">📱</span>
+              <span class="contact-label">Phone</span>
+              <span class="contact-value">+977 9843905803</span>
+            </a>
+            <a href="https://github.com/sittal-basyal" target="_blank" rel="noopener" class="contact-card">
+              <span class="contact-icon">💻</span>
+              <span class="contact-label">GitHub</span>
+              <span class="contact-value">github.com/sittal-basyal</span>
+            </a>
+          </div>
+
+          <a href="mailto:bashyalshittal@gmail.com?subject=Hello%20Sittal" class="btn btn-primary btn-lg">Say Hello</a>
         </div>
-    </footer>
+      </div>
+    </section>
+  </main>
 
-    <!-- Back to top button -->
-    <button class="back-to-top" aria-label="Back to top">
-        <i class="fas fa-chevron-up"></i>
-    </button>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Sittal Basyal.</span>
+      <div class="footer-links">
+        <a href="https://github.com/sittal-basyal" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.91c.58.11.79-.25.79-.55v-2.17c-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.72.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.75 2.69 1.25 3.34.95.1-.74.4-1.25.72-1.53-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .96-.31 3.15 1.18a10.9 10.9 0 0 1 5.74 0c2.19-1.49 3.15-1.18 3.15-1.18.62 1.59.23 2.76.11 3.05.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.38-5.25 5.67.41.35.78 1.05.78 2.12v3.14c0 .3.21.66.8.55A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/></svg>
+        </a>
+        <a href="mailto:bashyalshittal@gmail.com" aria-label="Email">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
 
-    <!-- Theme toggle button -->
-    <button class="theme-toggle" aria-label="Toggle theme">
-        <i class="fas fa-moon"></i>
-    </button>
+  <!-- Back to top -->
+  <button class="to-top" id="to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="m18 15-6-6-6 6"/></svg>
+  </button>
 
-    <!-- JavaScript -->
-    <script src="js/main.js"></script>
-    <script src="js/animations.js"></script>
-    <script src="js/form-handler.js"></script>
+  <script src="js/main.js"></script>
 </body>
-
 </html>
